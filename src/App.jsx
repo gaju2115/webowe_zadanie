@@ -14,7 +14,7 @@ function App() {
     created_at: ''
   })
 
-  // Pobieranie artykułów
+  
   useEffect(() => {
     const fetchArticles = async () => {
       let query = supabase
@@ -32,7 +32,7 @@ function App() {
     fetchArticles()
   }, [sortBy])
 
-  // Dodawanie nowego artykułu
+  
   const handleSubmit = async (e) => {
     e.preventDefault()
     
